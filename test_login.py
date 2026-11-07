@@ -21,7 +21,7 @@ def test_login_page_is_displayed(page: Page):
 def test_successful_login(page: Page):
     login(page)
 
-    expect(page).to_have_url("https://www.saucedemo.com/incorrect.html")
+    expect(page).to_have_url("https://www.saucedemo.com/inventory.html")
     expect(page.locator('[data-test="inventory-container"]')).to_be_visible()
 
 
